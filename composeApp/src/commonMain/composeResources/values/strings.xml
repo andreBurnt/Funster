@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Events</string>
+    <string name="add">Add</string>
+    <string name="error">Error</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="no_events_message">No events available</string>
+    <string name="no_date_message">No Date</string>
+    <string name="unknown_location_message">Unknown Location</string>
+    <string name="search_events_message">Search events...</string>
+    <string name="loading_more_message">Loading more...</string>
+</resources>
