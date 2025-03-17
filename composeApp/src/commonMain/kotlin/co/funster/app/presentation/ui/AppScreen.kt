@@ -23,6 +23,16 @@ import funster.composeapp.generated.resources.Res
 import funster.composeapp.generated.resources.search_events_message
 import org.jetbrains.compose.resources.stringResource
 
+/**
+ * Composable function that represents the main screen of the Funster app.
+ *
+ * This screen displays a list of events based on the UI state provided by the [AppViewModel].
+ * It supports different states such as loading, displaying events, or showing an empty state.
+ * The screen includes a top bar, a search bar, and a pull-to-refresh list of events.
+ * It also displays transient error messages when applicable.
+ *
+ * @param viewModel The [AppViewModel] instance that provides the UI state and handles user actions.
+ */
 @Composable
 fun AppScreen(
     viewModel: AppViewModel,
@@ -95,6 +105,13 @@ fun AppScreen(
     }
 }
 
+/**
+ * Composable function that displays a loading screen with a centered circular progress indicator.
+ *
+ * This screen is shown when the app is in a loading state, such as when fetching events from the network.
+ *
+ * @param modifier The [Modifier] to be applied to the loading screen. Defaults to [Modifier].
+ */
 @Composable
 fun LoadingScreen(
     modifier: Modifier = Modifier
@@ -111,6 +128,16 @@ fun LoadingScreen(
     }
 }
 
+/**
+ * Composable function that displays a search bar for filtering events.
+ *
+ * The search bar allows users to input a query to filter events by name or location.
+ * It uses an [OutlinedTextField] with a label and supports single-line input.
+ *
+ * @param query The current search query string.
+ * @param onQueryChange Callback invoked when the search query changes. Provides the new query string.
+ * @param modifier The [Modifier] to be applied to the search bar. Defaults to [Modifier].
+ */
 @Composable
 fun SearchBar(
     query: String,
