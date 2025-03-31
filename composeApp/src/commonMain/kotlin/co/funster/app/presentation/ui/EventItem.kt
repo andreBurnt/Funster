@@ -27,6 +27,7 @@ import funster.composeapp.generated.resources.no_date_message
 import funster.composeapp.generated.resources.unknown_location_message
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 /**
  * Composable function that displays a single event item in a card layout.
@@ -98,3 +99,19 @@ fun EventItem(
         }
     }
 }
+
+@Preview
+@Composable
+fun EventItemPreview() {
+    val event = Event(
+        id = "123",
+        name = "Madonna",
+        imageUrl = "https://en.wikipedia.org/wiki/Madonna#/media/File:HungUpSticky3.jpg",
+        startDate = "01-01-2025",
+        endDate = "02-01-2050",
+        city = "Seattle",
+        location = "The Spheres"
+    )
+    EventItem(event = event)
+}
+
