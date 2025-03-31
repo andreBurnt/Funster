@@ -122,6 +122,8 @@ iOS UI relies on SwiftUI integration, which may differ slightly from Android’s
 Testing Multiplatform Composable UI is blocked due to a bug https://slack-chats.kotlinlang.org/t/18784429/hi-there-i-m-trying-to-run-an-ui-test-in-shared-commontest-a
 TODO: find a workaround, monitor updates to https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-test.html
 
+Previews in Android Studio are limited to androidMain, but our composables are commonMain https://github.com/JetBrains/compose-multiplatform/issues/4869
+
 **Note**: Testing UI using Android Espresso in Android app for now.
 
 ## Future Improvements
